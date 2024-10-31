@@ -262,7 +262,6 @@ body {
 
 /* POPOUT MENY SKAPAD MED HJÄLP AV CHATGPT */
 .popout-menu {
-  display: none;
   position: absolute;
   top: 100%;
   right: 10px;
@@ -609,7 +608,7 @@ html {
   --clr-input-border: rgba(255, 255, 255, 0.18);
   --clr-placeholder: rgba(255, 255, 255, 0.18);
   --clr-footer: rgba(255, 255, 255, 0.5);
-  --clr-bg-menu: rgb(46, 36, 36);
+  --clr-bg-menu: rgb(29, 26, 26);
 }
 
 .dark .show-light {

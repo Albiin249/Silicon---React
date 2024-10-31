@@ -18,12 +18,11 @@ import Navbar from './Navbar'
 
 function Showcase() {
     return (
-        
+
         <div className='first-page'>
             <div className="container">
-            < Navbar/>
+                < Navbar />
                 <main id="showcase">
-                    
                     <h1>Manage All Your<br />Money in One App</h1>
                     <div className="left-side">
                         <section className="manage">
@@ -64,7 +63,7 @@ function Showcase() {
 
                 </main>
             </div>
-            
+
         </div>
 
     )
