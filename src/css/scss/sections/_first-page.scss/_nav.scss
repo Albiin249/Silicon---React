@@ -1,0 +1,63 @@
+
+
+nav {
+    display: flex;
+    align-items: center;
+
+    .features {
+        display: none;
+        margin-left: 2rem;
+        font-weight: 600;
+        color: var(--clr-features);
+    }
+    
+    
+    .btn-toggle-switch {
+        margin-left: auto;
+        margin-right: 1rem;
+
+        .label {
+            color: var(--clr-gray700);
+            font-weight: 600;
+            display: none;
+        }
+    }
+
+    .signin-btn {
+        display: none;
+    }
+
+    .hamb-meny {
+        margin-right: 1rem;
+    }
+
+
+    /* MEDIA QUERIES FÖR TABLET */ 
+    @media (min-width: 768px) {
+        .btn-toggle-switch {
+            margin-right: 5rem;
+            .label {
+                display: block;
+            }
+        }
+        
+    }
+    
+
+    /* MEDIA QUERIES FÖR DESKTOP */ 
+    @media (min-width: 1300px) {
+        .hamb-meny {
+            display: none;
+        }
+        .features {
+            display: block;
+        }
+        .signin-btn {
+            display: flex;
+        }
+        .btn-toggle-switch {
+            margin-right: 3rem;
+        }
+        
+    }
+}

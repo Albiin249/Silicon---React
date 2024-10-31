@@ -1,0 +1,80 @@
+
+#bank-info {
+    display: block;
+}
+.moneytransfer {
+    margin-left: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "transfer images"
+                         "contacts international";
+
+    .transfer {
+        grid-area: transfer;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-top: 10rem;
+        h3 {
+            font-size: 32px;
+            width: 416px;
+        }
+        .transfer-info {
+            display: flex;
+            gap: 1em;
+            p {
+                margin: 5px;
+            }
+        }
+        .transfer-margin {
+            margin-bottom: 2rem;
+        }
+    }
+    .images {
+        grid-area: images;
+        margin-left: 14rem;
+        margin-top: 7rem;
+        .inner {
+            position: absolute;
+            z-index: 1;
+        }
+        .outer {
+            position: relative;
+            z-index: 3;
+            left: 42%;
+            top: 82%;
+        }
+    }
+    .contacts-images {
+        grid-area: contacts;
+        margin-left: 1rem;
+        margin-top: 12rem;
+        .contacts {
+            position: absolute;
+        }
+        .card-2 {
+            position: relative;
+            top: 18%;
+            left: 33%;
+        }
+    }
+    .international {
+        grid-area: international;
+        margin-top: 13rem;
+        margin-left: 12rem;
+        margin-bottom: 12rem;
+        width: 526px;
+        height: 362px;
+        .payments-2 {
+            margin-top: 2rem;
+            display: flex;
+            gap: 3.5rem
+        }
+    
+        h3 {
+            font-size: 32px;
+        }
+        .btn-payment {
+            margin-top: 2rem;
+        }
+    }
+}

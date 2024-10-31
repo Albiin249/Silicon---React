@@ -1,0 +1,39 @@
+
+@import "./mixins/mixins";
+
+@import "./misc/_base";
+
+@import "./components/wrapper";
+@import "./components/container";
+@import "./components/buttons";
+@import "./components/lists\ &\ menus";
+@import "./components/text-styling";
+@import "./components/boxes";
+
+@import "./colors/colors";
+
+
+@import "./sections/_first-page.scss/nav";
+@import "./sections/_first-page.scss/showcase";
+@import "./sections/_first-page.scss/first-page";
+
+@import "./sections/_second-page.scss/logos";
+@import "./sections/_second-page.scss/main-features";
+@import "./sections/_second-page.scss/second-page";
+
+@import "./sections/_third-page.scss/third-page";
+@import "./sections/_third-page.scss/main-howdoesitwork";
+
+@import "./sections/_fourth-page.scss/fourth-page";
+@import "./sections/_fourth-page.scss/main-bank-info";
+
+@import "./sections/_fifth-page.scss/fifth-page";
+@import "./sections/_fifth-page.scss/section-clients";
+
+@import "./sections/_sixth_page.scss/sixth_page";
+@import "./sections/_sixth_page.scss/section-questions";
+@import "./sections/_sixth_page.scss/subscribe-footer";
+
+
+@import "./sections/footer.rights";
+

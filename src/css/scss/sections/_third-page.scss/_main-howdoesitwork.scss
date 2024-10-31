@@ -1,0 +1,136 @@
+#howdoesitwork {
+    .desktop-iphone-left {
+        display: none;
+    }
+    .desktop-iphone-right {
+        display: none;
+    }
+    .desktop-iphone-mid {
+        display: none;
+    }
+    .tablet-iphone-left {
+        display: none;
+    }
+    .tablet-iphone-right {
+        display: none;
+    }
+    .desktop-h3 {
+        display: none;
+    }
+    .tablet-h3 {
+        display: none;
+    }
+    .desktop-p {
+        display: none;
+    }
+
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 2rem;
+
+    }
+    .mobile-h3 {
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .mobile-p {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+
+
+    .iphone-mid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .tablet-iphone-mid {
+            position: absolute;
+        }
+        .tablet-iphone-mid-content {
+            position: relative;
+            right: 0.4px;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        .mobile-h3 {
+            display:none
+        }
+
+        .tablet-iphone-left {
+            display: block;
+        }
+        .tablet-iphone-right {
+            display: block;
+        }
+
+        .iphones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            font-size: 33px;
+        }
+
+        .tablet-h3 {
+            display: block;
+            font-size: 22px;
+            text-align: center;
+        }
+        
+
+
+    }
+
+
+    @media (min-width: 1300px) {
+        .tablet-iphone-left, .tablet-iphone-right, .tablet-iphone-mid, .tablet-iphone-mid-content, .tablet-h3, .mobile-p  {
+            display: none;
+        }
+        
+        .desktop-iphone-left, .desktop-iphone-mid, .desktop-iphone-right {
+            display: block;
+        }
+      
+        .desktop-iphone-left {
+            position: relative;
+            right: 7%;
+        }
+        .desktop-iphone-right {
+            position: relative;
+            left: 7%;
+        }
+
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .desktop-h3 {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .desktop-p {
+            display: block;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+
+    }
+
+}

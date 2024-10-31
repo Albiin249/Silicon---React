@@ -1,0 +1,38 @@
+footer {
+    padding-bottom: 1rem;
+}
+
+footer .container {
+    font-size: 14px;
+    color: var(--clr-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: .2rem;
+    display: grid;
+    
+
+}
+
+footer .credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+   
+}
+
+@media (min-width: 768px) {
+    footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .credit {
+        display: block;
+        margin-top: 14px;
+        
+    }
+
+}

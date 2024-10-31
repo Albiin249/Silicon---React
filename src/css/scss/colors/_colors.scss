@@ -1,0 +1,103 @@
+:root {
+    --clr-primary: #6366F1;
+    --clr-gradient: var(clr-primary (s0 h50 l100));
+
+    --clr-gray100: #F3F6FF;
+    --clr-gray200: #EFF2FC;
+    --clr-gray300: #E2E5F1;
+    --clr-gray400: #D4D7E5;
+    --clr-gray500: #B4B7C9;
+    --clr-gray600: #9397AD;
+    --clr-gray700: #565973;
+    --clr-gray800: #33354D;
+    --clr-gray900: #0B0F19;
+
+    --clr-bg: white;
+    --clr-bg-100: var(--clr-gray100);
+
+    --clr-features: var(--clr-gray800);
+
+
+    --clr-rubrik: var(--clr-gray900);
+    --clr-body: var(--clr-gray700);
+    --clr-btn-app: var(--clr-gray900);
+
+    --clr-btn-circle-closed: white;
+
+    --clr-box1-4-border: var(--clr-gray300);
+
+
+    --clr-box-2: rgb(99, 102, 241, 0.08);
+
+    --clr-box-3: white;
+    --clr-fanniealbert-p: var(--clr-gray600);
+
+    --clr-bg-details: white;
+
+    --clr-input-border: var(--clr-gray400);
+    --clr-placeholder: var(--clr-gray500);
+
+    --clr-footer: var(--clr-gray600);
+
+    --clr-bg-menu: white;
+
+    .show-dark {
+        display: none;
+    }
+
+}
+
+html {
+    color-scheme: light;
+}
+
+/* ------------- DARK MODE ------------- */
+
+.dark {
+    .show-light {
+        display: none;
+    }
+
+    .show-dark {
+        display: block;
+    }
+
+
+    color-scheme: dark;
+
+    --clr-bg: var(--clr-gray900);
+    --clr-bg-100: rgba(255, 255, 255, 0.04);
+
+    --clr-rubrik: white;
+    --clr-body: rgba(255, 255, 255, 0.7);
+    --clr-features: rgba(255, 255, 255, 0.85);
+
+
+    --clr-btn-app: var(--clr-gray200);
+
+    --clr-btn-circle-closed: rgba(255, 255, 255, 0.05);
+
+    --clr-box1-4-border: rgba(255, 255, 255, 0.15);
+
+    --clr-box-2: rgb(243, 246, 255, 0.08);
+    --clr-box-3: rgb(255, 255, 255, 0.04);
+    --clr-fanniealbert-p: rgba(255, 255, 255, 0.5);
+
+    --clr-bg-details: rgba(255, 255, 255, 0.04);
+
+
+
+    --clr-input-border: rgba(255, 255, 255, 0.18);
+    --clr-placeholder: rgba(255, 255, 255, 0.18);
+
+    --clr-footer: rgba(255, 255, 255, 0.5);
+
+    --clr-bg-menu: rgb(46, 36, 36);
+
+    details summary::after {
+        background-image: url('/src/assets/images/chevron-darkmode.svg');
+        background-size: 24px;
+    }
+
+
+}

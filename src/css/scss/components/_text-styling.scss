@@ -1,0 +1,33 @@
+a {
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.d4 {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--clr-rubrik);
+}
+
+.rubrik {
+    font-weight: 800;
+    color: var(--clr-rubrik);
+}
+
+.body-l {
+    font-size: 18px;
+    color: var(--clr-body);
+}
+
+.body-s {
+    font-size: 14px;
+    color: var(--clr-body);
+}
+
+.body-m {
+    font-size: 16px;
+    color: var(--clr-body);
+}

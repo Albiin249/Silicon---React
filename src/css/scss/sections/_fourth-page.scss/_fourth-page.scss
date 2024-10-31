@@ -1,0 +1,11 @@
+.fourth-page {
+    background-color: var(--clr-bg);
+}
+
+.fourth-page {
+    display: none;
+
+    @media (min-width: 1300px) {
+        display: block;
+    }
+}

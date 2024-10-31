@@ -1,0 +1,250 @@
+#showcase {
+
+/* --------MOBIL LÄGE-------- */
+width: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+.mobile-p {
+    width: auto;
+    text-align: center;
+    
+}
+
+h1 {
+    display: none;
+}
+
+.left-side {
+    h1 {
+        display: block;
+        font-size: 34px;
+        font-weight: 800;
+    }
+}
+.iphones {
+    display: none;
+}
+
+.desktop-p {
+    display: none;
+}
+
+.tablet-p {
+    display: none;
+}
+
+
+.app-btns {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+   
+    .btn-app {
+        width: 100%;
+    }
+}
+
+.discover-more {
+    display: flex;
+    gap: 1em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* --------MOBIL LÄGE SLUT-------- */
+
+/* --------TABLET LÄGE-------- */
+
+@media (min-width: 768px) {
+    height: 618px;
+    max-width: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    display: grid;
+    
+    grid-template-areas: "h1 h1"
+                          "text phones"
+                           "buttons phones"
+                           "discover phones";
+ 
+    grid-template-columns: 1fr auto;
+    
+    .left-side{
+        justify-self: start;
+        margin-top: 4rem;
+        h1 {
+            display: none;
+        }
+        .tablet-p {
+            display: block;
+            text-align: left;
+        }
+        .mobile-p {
+            display: none;
+        }
+        .desktop-p {
+            display: none;
+        }
+    }
+    
+    h1 {
+        margin-top: 3rem;
+        display: block;
+        font-weight: 800;
+        width: 442px;
+        grid-area: h1;
+        font-size: 44px;
+        
+    }
+    .app-btns {
+        grid-area: buttons;
+        display: flex;
+        flex-direction: row;
+        justify-self: start;
+        .btn-app {
+            width: 135px;
+            .appstore-logo {
+                width: 92px;
+                height: 24px;
+            }
+            .googleplay-logo {
+                width: 23px;
+                height: 23px;
+            }
+            .googleplay-text {
+                width: 76px;
+                height: 23px;
+            }
+        }
+    }
+    .discover-more {
+        grid-area: discover;
+        justify-self: start;
+        
+        margin-bottom: 7rem;
+    }
+
+    .iphones {
+        
+        position: relative;
+        height: 417px;
+        grid-area: phones;
+        display: flex;
+        justify-self: end;
+        bottom: 12.5%;
+        left: 5%;
+        overflow: hidden;
+        
+        
+        .iphone-front {
+            width: 243px;
+            position: relative;
+            z-index: 30;
+            
+            
+        }
+        .iphone-back{
+            width: 240px;
+            position: relative;
+            left: 21%;
+            z-index: 4;
+            top: 2.5rem;
+            
+        }
+    }
+}
+/* --------TABLET LÄGE SLUT-------- */
+
+/* --------DESKTOPLÄGE-------- */
+@media (min-width: 1400px) {
+    
+    max-width: 1300px;
+    margin-top: 8rem;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left-side iphones"
+                         "left-side iphones"
+                         "discover-more iphones";
+    
+  
+    h1 {
+        display: none;
+    }
+    .left-side {
+        position: relative;
+        bottom: 18%;
+        grid-area: left-side;
+        .desktop-p {
+            display: block;
+        }
+        .mobile-p {
+            display: none;
+        } 
+        .tablet-p {
+            display: none;
+        }                         
+        h1 {
+            display: inline;
+            font-size: 56px;
+        }
+    }
+    .manage {
+        grid-area: manage;
+    }
+    .app-btns {
+        grid-area: buttons;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        .btn-app {
+            width: 180px;
+        }
+    }
+
+
+    .discover-more {
+        grid-area: discover-more;
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        
+    }
+
+
+
+    .iphones {
+       
+        grid-area: iphones;
+        display: flex;
+        width: auto;
+        height: 702px;
+        position: relative;
+        bottom: 10.2%;
+        left: 0;
+        
+
+        .iphone-front {
+            height: 813px;
+            width: 402px;
+            bottom: 7%;
+
+        }
+        .iphone-back{
+            width: 395px;
+            height: 800px;
+            top: 4%;
+        }
+    }
+}
+
+}

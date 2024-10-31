@@ -1,0 +1,53 @@
+
+#recensions {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
+    max-width: 1300px;
+    h2 {
+        font-size: 40px;
+        margin-top: -1rem;
+        width: 350px;
+    
+    }
+}
+.box-3 {
+    padding: 1rem;
+    
+}
+.fannie-box {
+
+    margin-left: 4rem;
+}
+.imgs {
+    display: flex;
+    flex-direction: column;
+    
+    .quotes {
+        position: relative;
+        top: -60%;
+        height: 45px;
+        width: 45px;
+    }
+    .ratings {
+        position: relative;
+        width: 88px;
+        height: 16px;
+        top: -10%;
+    }
+}
+.fannie {
+    display: flex;
+    gap: 1em;
+    .text-fannie {
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: -0.5rem;
+        }
+        p {
+            color: var(--clr-fanniealbert-p);
+        }
+    }
+}

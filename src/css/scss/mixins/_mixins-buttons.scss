@@ -1,0 +1,23 @@
+@mixin button-colors($bg-color, $text-color, $hover-bg-color, $hover-text-color, $border-color: null) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-color: if($border-color, $border-color, $bg-color);
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+    }
+
+}
+
+@mixin btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+button {
+    @include btn;
+    @include button-colors(var(clr-primary), -var(clr-secondary), -bg-color, -text-color)
+}

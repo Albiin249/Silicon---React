@@ -1,0 +1,10 @@
+.fifth-page {
+    background-color: var(--clr-bg-100);
+}
+.fifth-page {
+    display: none;
+    @media (min-width: 1300px) {
+        display: block;
+    }
+
+}
