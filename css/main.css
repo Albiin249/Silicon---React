@@ -1409,6 +1409,38 @@ aside .card {
   }
 }
 
+.return-box {
+  background-color: #22C55E;
+  border: 1px solid var(--clr-input-border);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 150px;
+  position: relative;
+  top: 20%;
+}
+.return-box .btn {
+  background-color: olivedrab;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .return-box {
+    height: 160px;
+    width: 600px;
+    top: 0;
+  }
+}
+
+.error-text {
+  position: absolute;
+  margin-top: 4rem;
+  color: red;
+}
+
 footer {
   padding-bottom: 1rem;
 }

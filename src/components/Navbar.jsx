@@ -11,15 +11,18 @@ import loginLogo from '/src/assets/images/login-logo.svg'
 import DarkModeToggle from './Darkmode'
 import HambMeny from './HambMeny'
 
+import { Link, NavLink } from 'react-router-dom'
+
 function Navbar() {
     return (
 
         <nav>
-            <a href="#">
+            <Link to="/">
                 <img className="show-light" src={siliconLogo} alt="Silicon Logotype" />
                 <img className="show-dark" src={siliconLogoDark} alt="Silicon Logotype" />
-            </a>
-            <a className="features" href="#">Features</a>
+            </Link>
+            <Link className="features" to="/home#features">Features</Link>
+            <NavLink className="features" to="/contact">Contact</NavLink>
 
             <DarkModeToggle />
             <HambMeny />

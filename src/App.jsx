@@ -1,29 +1,22 @@
 import React from 'react'
 import './css/main.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Showcase from './components/Showcase'
-import Logos from './components/Logos'
-import Features from './components/Features'
-import Howdoesitwork from './components/Howdoesitwork'
-import MoneyTransfer from './components/MoneyTransfer'
-import Recensions from './components/Recensions'
-import Faq from './components/Faq'
-import Footer from './components/Footer'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
 
 
 function App() {
   return (
-    <div className="wrapper">
-      < Showcase />
-      < Logos />
-      < Features />
-      < Howdoesitwork />
-      < MoneyTransfer />
-      < Recensions />
-      < Faq />
-      < Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={< Home />} />
+        <Route path="/contact" element={< Contact />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
 export default App
+
