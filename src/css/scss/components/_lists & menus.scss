@@ -36,7 +36,12 @@
 
 .popout-menu.show {
   display: block;
-
+  opacity: 1;
+  /* Gör menyn synlig */
+  pointer-events: auto;
+  /* Gör så att menyn kan interagera när den är synlig */
+  transform: translateY(0);
+  /* Återställ positionen när den visas */
 }
 
 

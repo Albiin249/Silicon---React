@@ -41,6 +41,8 @@
 
     --clr-bg-menu: white;
 
+    --clr-input-rubrik: var(--clr-gray900);
+
     .show-dark {
         display: none;
     }
@@ -93,6 +95,8 @@ html {
     --clr-footer: rgba(255, 255, 255, 0.5);
 
     --clr-bg-menu: rgb(46, 36, 36);
+
+    --clr-input-rubrik: white;
 
     details summary::after {
         background-image: url('/src/assets/images/chevron-darkmode.svg');

@@ -34,14 +34,18 @@ function HambMeny() {
                 <img className="show-light" src={hambMeny} alt="Menu for mobile/tablet screens" />
                 <img className="show-dark" src={hambMenyDark} alt="Menu for mobile/tablet screens" />
             </button>
-            {showMenu ? <div className="popout-menu">
+
+            {/* Lägg till `show`-klassen när showMenu är true */}
+            <div className={`popout-menu ${showMenu ? 'show' : ''}`}>
                 <ul>
-                    <li><a href="#">Features</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/Contact">Contact</a></li>
                     <li><a href="#">Login/Sign up</a></li>
                 </ul>
-            </div> : false}
+            </div>
         </div>
-    )
+    );
+
 }
 
 export default HambMeny

@@ -269,6 +269,12 @@ body {
 
 .popout-menu.show {
   display: block;
+  opacity: 1;
+  /* Gör menyn synlig */
+  pointer-events: auto;
+  /* Gör så att menyn kan interagera när den är synlig */
+  transform: translateY(0);
+  /* Återställ positionen när den visas */
 }
 
 /*LISTA FÖR FEATURES SIDAN - SIDA 2*/
@@ -451,6 +457,11 @@ a:hover {
   color: var(--clr-body);
 }
 
+.input-rubrik {
+  font-weight: 600;
+  color: var(--clr-input-rubrik-light);
+}
+
 .box {
   display: flex;
   align-items: center;
@@ -502,6 +513,108 @@ a:hover {
   padding: 1.5em;
 }
 
+.contact-form {
+  width: 635px;
+  height: 720px;
+  background-color: var(--clr-bg);
+  margin-left: auto;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form .container-form {
+  width: 490px;
+  height: 700px;
+  margin-top: 4rem;
+}
+.contact-form h2 {
+  font-size: 32px;
+}
+.contact-form .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form .input-form .input-rubrik {
+  margin-bottom: 0.2em;
+}
+.contact-form .input-form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #D4D7E5;
+  border-radius: 0.5em;
+}
+.contact-form .btn {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  margin-top: 7rem;
+  z-index: 50;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-list {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown input {
+  padding-right: 30px;
+  /* Gör plats för chevron-ikonen till höger */
+}
+
+.chevron {
+  background-image: url("/src/assets/images/chevron.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  width: 15px;
+  height: 15px;
+}
+
+.chevron.open {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 :root {
   --clr-primary: #6366F1;
   --clr-gradient: var(clr-primary (s0 h50 l100));
@@ -530,6 +643,7 @@ a:hover {
   --clr-placeholder: var(--clr-gray500);
   --clr-footer: var(--clr-gray600);
   --clr-bg-menu: white;
+  --clr-input-rubrik: var(--clr-gray900);
 }
 :root .show-dark {
   display: none;
@@ -558,6 +672,7 @@ html {
   --clr-placeholder: rgba(255, 255, 255, 0.18);
   --clr-footer: rgba(255, 255, 255, 0.5);
   --clr-bg-menu: rgb(46, 36, 36);
+  --clr-input-rubrik: white;
 }
 .dark .show-light {
   display: none;
@@ -1472,4 +1587,51 @@ footer .credit {
     display: block;
     margin-top: 14px;
   }
+}
+.contact-fp {
+  background-color: var(--clr-bg-100);
+  height: 780px;
+}
+
+.undermeny {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.undermeny .homepage-text {
+  color: #9397AD;
+  font-size: 14px;
+  display: flex;
+  gap: 0.5em;
+}
+.undermeny .contact-text {
+  color: #6366F1;
+  font-size: 14px;
+}
+
+.contact-rubrik {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.email, .career {
+  display: flex;
+  width: 400px;
+}
+.email .text-box, .career .text-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  width: 306px;
+}
+.email .text-box a, .career .text-box a {
+  padding-top: 1.5rem;
+}
+.email .text-box h3, .career .text-box h3 {
+  color: var(--clr-input-rubrik);
+}
+.email .text-box span, .career .text-box span {
+  color: var(--clr-body);
 }
