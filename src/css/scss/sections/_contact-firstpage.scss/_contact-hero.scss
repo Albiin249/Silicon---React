@@ -1,7 +1,5 @@
-
-
 .undermeny {
-    
+
     display: flex;
     gap: 1rem;
     margin-top: 5rem;
@@ -12,6 +10,7 @@
         display: flex;
         gap: .5em;
     }
+
     .contact-text {
         color: #6366F1;
         font-size: 14px;
@@ -19,28 +18,95 @@
 }
 
 .contact-rubrik {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    display: none;
 }
-.email, .career {
+
+.email,
+.career {
     display: flex;
-    width: 400px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
 
     .text-box {
         display: flex;
         flex-direction: column;
-        padding-top: 1rem;
-        margin-top: 2rem;
         margin-left: 1rem;
+        margin-top: 2rem;
         width: 306px;
+
         a {
             padding-top: 1.5rem;
         }
+
         h3 {
             color: var(--clr-input-rubrik);
         }
+
         span {
             color: var(--clr-body);
+        }
+    }
+}
+
+.contacted {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 700px) {
+
+    .email,
+    .career {
+        justify-content: left;
+        width: 250px;
+    }
+
+    .contacted {
+        position: absolute;
+        margin-left: 15rem;
+        top: 20%;
+        .return-box {
+            width: 350px;
+        }
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .contact-rubrik {
+        display: block;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .email,
+    .career {
+        width: 400px;
+
+        .text-box {
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+    }
+
+    .contacted {
+       
+        margin-left: auto;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        .return-box {
+            width: 490px;
+            margin-top: 3rem;
         }
     }
 }

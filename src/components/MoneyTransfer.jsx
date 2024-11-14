@@ -12,6 +12,7 @@ import card from '/src/assets/images/card.svg'
 import payments from '/src/assets/images/payments.svg.svg'
 import cashback from '/src/assets/images/cashback.svg.svg'
 
+import { Link } from 'react-router-dom'
 
 function MoneyTransfer() {
     return (
@@ -35,10 +36,10 @@ function MoneyTransfer() {
                                     <p className="body-m">Manage payments and transactions online</p>
                                 </div>
                             </div>
-                            <a href="#" className="btn btn-learn">
+                            <Link to="#" className="btn btn-learn">
                                 <span>Learn more</span>
                                 <img src={pil} alt="arrow" />
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="images">
@@ -74,10 +75,10 @@ function MoneyTransfer() {
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" className="btn btn-learn btn-payment">
+                            <Link to="#" className="btn btn-learn btn-payment">
                                 <span>Learn more</span>
                                 <img src={pil} alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </section>
                 </main>

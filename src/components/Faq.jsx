@@ -7,6 +7,8 @@ import message from '/src/assets/images/message.svg'
 import blueArrow from '/src/assets/images/arrow-blue.svg'
 import greenArrow from '/src/assets/images/arrow-green.svg'
 
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -28,12 +30,12 @@ function Faq() {
                                 <div className="phone box-4">
                                     <img src={phone} alt="Phone" />
                                     <p className="body-s">Still have questions?</p>
-                                    <a href="#">Contact us<img src={blueArrow} /></a>
+                                    <Link to="/contact">Contact us<img src={blueArrow} /></Link>
                                 </div>
                                 <div className="message box-4">
                                     <img src={message} alt="Message-bubble" />
                                     <p className="body-s">Don't like phone calls?</p>
-                                    <a href="#">Contact us<img src={greenArrow} /></a>
+                                    <Link to="/Contact">Contact us<img src={greenArrow} /></Link>
                                 </div>
                             </div>
                         </div>
@@ -41,19 +43,19 @@ function Faq() {
                         < FaqLista />
 
                         <div className="btn-contact">
-                            <button className="btn contact-btn">Contact us now</button>
+                            <Link to="/contact" className="btn contact-btn">Contact us now</Link>
                         </div>
 
                         <div className="contact-boxes contact-boxes-tablet">
                             <div className="phone box-4">
                                 <img src={phone} alt="Phone" />
                                 <p className="body-s">Still have questions?</p>
-                                <a href="#">Contact us<img src={blueArrow} /></a>
+                                <Link to="/contact">Contact us<img src={blueArrow} /></Link>
                             </div>
                             <div className="message box-4">
                                 <img src={message} alt="Message-bubble" />
                                 <p className="body-s">Don't like phone calls?</p>
-                                <a href="#">Contact us<img src={greenArrow} /></a>
+                                <Link to="/contact">Contact us<img src={greenArrow} /></Link>
                             </div>
                         </div>
 

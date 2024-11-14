@@ -17,6 +17,8 @@
 
     --clr-features: var(--clr-gray800);
 
+    --clr-bg-hover: #f2f2f2;
+
 
     --clr-rubrik: var(--clr-gray900);
     --clr-body: var(--clr-gray700);
@@ -98,10 +100,15 @@ html {
 
     --clr-input-rubrik: white;
 
+    --clr-bg-hover: #16203A;
+
     details summary::after {
         background-image: url('/src/assets/images/chevron-darkmode.svg');
         background-size: 24px;
     }
 
+    .chevron {
+        background-image: url('/src/assets/images/chevron-darkmode.svg');
+    }
 
 }

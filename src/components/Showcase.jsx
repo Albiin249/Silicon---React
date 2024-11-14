@@ -16,13 +16,16 @@ import iphoneBack from '/src/assets/images/iphone-back.svg'
 import iphoneFront from "/src/assets/images/iphone-front.svg"
 import Navbar from './Navbar'
 
+import { Link } from 'react-router-dom';
+
+
 function Showcase() {
     return (
 
         <div className='first-page'>
-            
+
             <div className="container">
-            < Navbar />
+                < Navbar />
                 <main id="showcase">
                     <h1>Manage All Your<br />Money in One App</h1>
                     <div className="left-side">
@@ -50,10 +53,10 @@ function Showcase() {
                     </div>
 
                     <div className="discover-more">
-                        <a className="btn-circle" href="#features">
+                        <Link className="btn-circle" to="#features">
                             <img className="show-light" src={chevron} alt="chevron icon for button" />
                             <img className="show-dark" src={chevronDark} alt="chevron icon for button" />
-                        </a>
+                        </Link>
                         <p className="body-s">Discover more</p>
                     </div>
 

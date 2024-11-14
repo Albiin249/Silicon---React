@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-const DropdownInput = () => {
-    const [inputValue, setInputValue] = useState('');
+const DropdownInput = ({ value, onChange, name }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [options, setOptions] = useState(['Option 1', 'Option 2', 'Option 3']);
-
-    const handleInputChange = (event) => {
-        setInputValue(event.target.value);
-    };
+    const [options] = useState(['Option 1', 'Option 2', 'Option 3']); // Alternativen
 
     const handleOptionClick = (option) => {
-        setInputValue(option);
+        // Skicka tillbaka ett simulerat event till onChange för att uppdatera värdet i ContactForm
+        onChange({ target: { name: name, value: option } });
         setIsDropdownOpen(false);
     };
 
@@ -24,15 +20,10 @@ const DropdownInput = () => {
         }
     };
 
-    const handleChevronClick = () => {
-        setIsDropdownOpen((prev) => !prev);
-    };
-
-
     useEffect(() => {
         document.addEventListener('click', handleOutsideClick);
         return () => {
-            document.removeEventListener('click', handleOutsideClick); // Städa upp eventlyssnare
+            document.removeEventListener('click', handleOutsideClick);
         };
     }, []);
 
@@ -40,23 +31,20 @@ const DropdownInput = () => {
         <div className="dropdown">
             <input
                 type="text"
-                value={inputValue}
-                onChange={handleInputChange}
+                name={name}
+                value={value}
                 onClick={handleInputClick}
-                placeholder=""
+                readOnly
+                placeholder="Select an option"
             />
-            <div className={`chevron ${isDropdownOpen ? 'open' : ''}`}
-                onClick={handleChevronClick}
-            />
+            <div className={`chevron ${isDropdownOpen ? 'open' : ''}`} onClick={handleInputClick} />
             {isDropdownOpen && (
                 <ul className="dropdown-list">
-                    {options
-                        .filter((option) => option.toLowerCase().includes(inputValue.toLowerCase()))
-                        .map((option, index) => (
-                            <li key={index} onClick={() => handleOptionClick(option)}>
-                                {option}
-                            </li>
-                        ))}
+                    {options.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick(option)}>
+                            {option}
+                        </li>
+                    ))}
                 </ul>
             )}
         </div>

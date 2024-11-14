@@ -6,6 +6,10 @@ import home from '/src/assets/images/home.svg'
 import chevRight from '/src/assets/images/chevrons-right.svg'
 import Navbar from './Navbar'
 import ContactForm from './ContactForm'
+import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+
 
 function ContactHero() {
   return (
@@ -14,9 +18,9 @@ function ContactHero() {
       <div className="container">
         <Navbar />
         <div className="undermeny">
-          <a href="/home" className="homepage-text"> <img src={home}></img>Homepage</a>
+          <NavLink to="/home" className="homepage-text"> <img src={home}></img>Homepage</NavLink>
           <img src={chevRight} alt="" />
-          <a href="/contact" className="contact-text">Contact</a>
+          <NavLink to="/contact" className="contact-text">Contact</NavLink>
         </div>
 
         <h2 className="rubrik contact-rubrik">Contact Us</h2>
@@ -25,7 +29,7 @@ function ContactHero() {
           <div className="text-box">
             <h3 className="rubrik">Email us</h3>
             <span className="body-m">Please feel free to drop us a line. We will respond as soon as possible.</span>
-            <a href="#">Leave a message<img src={Arrow}></img></a>
+            <Link href="#">Leave a message<img src={Arrow}></img></Link>
           </div>
         </div>
         <div className="career">
@@ -33,11 +37,11 @@ function ContactHero() {
           <div className="text-box">
             <h3 className='rubrik'>Careers</h3>
             <span className="body-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</span>
-            <a href="#">Send an application<img src={Arrow}></img></a>
+            <Link href="#">Send an application<img src={Arrow}></img></Link>
           </div>
         </div>
 
-        < ContactForm/>
+        < ContactForm />
       </div>
     </div>
   )
