@@ -13,23 +13,36 @@ import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
     return (
-            <nav>
-                <Link to="/">
-                    <img className="show-light" src={siliconLogo} alt="Silicon Logotype" />
-                    <img className="show-dark" src={siliconLogoDark} alt="Silicon Logotype" />
-                </Link>
-                <Link className="features" to="/home#features">Features</Link>
-                <NavLink className="features" to="/contact">Contact</NavLink>
+        <nav>
+            <NavLink
+                to="/"
+                className={({ isActive }) => isActive ? 'active-link' : ''}
+            >
+                <img className="show-light" src={siliconLogo} alt="Silicon Logotype" />
+                <img className="show-dark" src={siliconLogoDark} alt="Silicon Logotype" />
+            </NavLink>
+            <NavLink
+                to="/home#features"
+                className={({ isActive }) => isActive ? 'features active-link' : 'features'}
+            >
+                Features
+            </NavLink>
+            <NavLink
+                to="/contact"
+                className={({ isActive }) => isActive ? 'features active-link' : 'features'}
+            >
+                Contact
+            </NavLink>
 
-                <DarkModeToggle />
-                <HambMeny />
+            <DarkModeToggle />
+            <HambMeny />
 
-                <Link to="#" className="btn signin-btn">
-                    <img src={loginLogo} alt="Login logo" />
-                    <span>Sign in / up</span>
-                </Link>
-            </nav>
-        
+            <Link to="#" className="btn signin-btn">
+                <img src={loginLogo} alt="Login logo" />
+                <span>Sign in / up</span>
+            </Link>
+        </nav>
+
 
     )
 }

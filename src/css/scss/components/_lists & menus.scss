@@ -27,7 +27,11 @@
         color: var(--clr-body);
 
         &:hover {
-          background-color: #f1f1f1;
+          background-color: var(--clr-bg-hover);
+        }
+
+        &.active-link {
+          text-decoration: underline;
         }
       }
     }

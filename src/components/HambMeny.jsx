@@ -4,6 +4,8 @@ import hambMenyDark from '/src/assets/images/hamb-meny-darkmode.svg'
 
 import React from 'react'
 
+import { Link, NavLink } from 'react-router-dom'
+
 function HambMeny() {
     const [menu, setMenu] = useState()
     const [showMenu, setShowMenu] = useState(false)
@@ -38,9 +40,30 @@ function HambMeny() {
             {/* Lägg till `show`-klassen när showMenu är true */}
             <div className={`popout-menu ${showMenu ? 'show' : ''}`}>
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/Contact">Contact</a></li>
-                    <li><a href="#">Login/Sign up</a></li>
+                    <li>
+                        <NavLink
+                            to="/home"
+                            className={({ isActive }) => isActive ? 'active-link' : {}}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/contact"
+                            className={({ isActive }) => isActive ? 'active-link' : ''}
+                        >
+                            Contact
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) => isActive ? 'active-link' : ''}
+                        >
+                            Login/Sign up
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </div>

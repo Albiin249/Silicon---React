@@ -1,4 +1,6 @@
-
+.active-link {
+    text-decoration: underline;
+}
 
 nav {
     display: flex;
@@ -10,8 +12,8 @@ nav {
         font-weight: 600;
         color: var(--clr-features);
     }
-    
-    
+
+
     .btn-toggle-switch {
         margin-left: auto;
         margin-right: 1rem;
@@ -29,35 +31,40 @@ nav {
 
     .hamb-meny {
         margin-right: 1rem;
+
     }
 
 
-    /* MEDIA QUERIES FÖR TABLET */ 
+    /* MEDIA QUERIES FÖR TABLET */
     @media (min-width: 768px) {
         .btn-toggle-switch {
             margin-right: 5rem;
+
             .label {
                 display: block;
             }
         }
-        
-    }
-    
 
-    /* MEDIA QUERIES FÖR DESKTOP */ 
+    }
+
+
+    /* MEDIA QUERIES FÖR DESKTOP */
     @media (min-width: 1300px) {
         .hamb-meny {
             display: none;
         }
+
         .features {
             display: block;
         }
+
         .signin-btn {
             display: flex;
         }
+
         .btn-toggle-switch {
             margin-right: 3rem;
         }
-        
+
     }
 }

@@ -264,7 +264,10 @@ body {
   color: var(--clr-body);
 }
 .popout-menu ul li a:hover {
-  background-color: #f1f1f1;
+  background-color: var(--clr-bg-hover);
+}
+.popout-menu ul li a.active-link {
+  text-decoration: underline;
 }
 
 .popout-menu.show {
@@ -723,6 +726,10 @@ html {
 }
 .dark .chevron {
   background-image: url("/src/assets/images/chevron-darkmode.svg");
+}
+
+.active-link {
+  text-decoration: underline;
 }
 
 nav {
