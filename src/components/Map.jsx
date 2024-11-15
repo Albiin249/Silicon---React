@@ -22,25 +22,25 @@ function Map() {
                             <h2 className='rubrik'>Medical Center 1</h2>
                             <p className='body-m'> <img src={destination} alt="Destination Icon" /> 4517 Washington Ave. Manchester, Kentucky 39495</p>
                             <p className='body-m'> <img src={phone} alt="Phone Icon" /> (406) 555-0120</p>
-                            <p className='body-m times'>
+                            <section className='body-m times'>
                                 <img src={clock} alt="Clock Icon" className="clock" />
                                 <div className="schedule">
                                     <span className="days"><strong>Mon – Fri: </strong> 9:00 am – 22:00 am</span>
                                     <span className="days"><strong>Sat – Sun: </strong> 9:00 am – 20:00 am</span>
                                 </div>
-                            </p>
+                            </section>
                         </div>
                         <div className="med-2">
                             <h2 className='rubrik'>Medical Center 2</h2>
                             <p className='body-m'> <img src={destination} alt="Destination Icon" /> 2464 Royal Ln. Mesa,New Jersey 45463</p>
                             <p className='body-m'><img src={phone} alt="Phone Icon" /> (406) 544-0123</p>
-                            <p className='body-m times'>
+                            <section className='body-m times'>
                                 <img src={clock} alt="Clock Icon" className="clock" />
                                 <div className="schedule">
                                     <span className="days"><strong>Mon – Fri: </strong> 9:00 am – 22:00 am</span>
                                     <span className="days"><strong>Sat – Sun: </strong> 9:00 am – 20:00 am</span>
                                 </div>
-                            </p>
+                            </section>
 
                         </div>
                         <div className="social-media">
