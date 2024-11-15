@@ -1777,6 +1777,7 @@ footer .credit {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .med-1 p,
 .med-2 p {
@@ -1799,10 +1800,16 @@ footer .credit {
   margin-top: 3rem;
 }
 .social-media .box-2 {
-  width: 100px;
+  width: 80px;
   height: 80px;
 }
 
+@media (min-width: 768px) {
+  .social-media .box-2 {
+    width: 100px;
+    height: 80px;
+  }
+}
 @media (min-width: 1300px) {
   .map {
     display: block;
