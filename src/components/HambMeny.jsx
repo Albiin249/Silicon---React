@@ -57,10 +57,7 @@ function HambMeny() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            to="/"
-                            className={({ isActive }) => isActive ? 'active-link' : ''}
-                        >
+                        <NavLink to="">
                             Login/Sign up
                         </NavLink>
                     </li>

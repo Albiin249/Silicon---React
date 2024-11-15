@@ -21,10 +21,7 @@ function Navbar() {
                 <img className="show-light" src={siliconLogo} alt="Silicon Logotype" />
                 <img className="show-dark" src={siliconLogoDark} alt="Silicon Logotype" />
             </NavLink>
-            <NavLink
-                to="/home#features"
-                className={({ isActive }) => isActive ? 'features active-link' : 'features'}
-            >
+            <NavLink to="#features" className="features">
                 Features
             </NavLink>
             <NavLink
