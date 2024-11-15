@@ -49,12 +49,12 @@ function Faq() {
                         <div className="contact-boxes contact-boxes-tablet">
                             <div className="phone box-4">
                                 <img src={phone} alt="Phone" />
-                                <p className="body-s">Still have questions?</p>
+                                <span className="body-s">Still have questions?</span>
                                 <Link to="/contact">Contact us<img src={blueArrow} /></Link>
                             </div>
                             <div className="message box-4">
                                 <img src={message} alt="Message-bubble" />
-                                <p className="body-s">Don't like phone calls?</p>
+                                <span className="body-s">Don't like phone calls?</span>
                                 <Link to="/contact">Contact us<img src={greenArrow} /></Link>
                             </div>
                         </div>

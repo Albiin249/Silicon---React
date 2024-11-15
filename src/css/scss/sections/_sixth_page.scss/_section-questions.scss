@@ -1,10 +1,10 @@
 #faq {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
-   
+
 }
 
 .questions {
@@ -13,13 +13,14 @@
         display: grid;
         grid-template-columns: 1fr auto;
         grid-template-areas: "questions-2 info-lista"
-                              "subscribe subscribe";
-   }
+            "subscribe subscribe";
+    }
 }
 
 
 .questions {
     padding-left: 1rem;
+
     .mobile-h2 {
         font-size: 24px;
         text-align: center;
@@ -29,10 +30,11 @@
         text-align: center;
     }
 
-    .desktop-tablet-h2, .desktop-tablet-p {
+    .desktop-tablet-h2,
+    .desktop-tablet-p {
         display: none;
     }
-    
+
 }
 
 .btn-contact {
@@ -44,43 +46,58 @@
 
 .contact-boxes {
     display: none;
+
     .phone {
         a {
             color: var(--clr-primary);
         }
     }
+
     .message {
         a {
             color: #22C55E;
-           
+
         }
     }
-    
+
 }
 
 @media (min-width: 768px) {
-    
+
     .questions {
-        
-        .mobile-h2, .mobile-p, .btn-contact {
+
+        .mobile-h2,
+        .mobile-p,
+        .btn-contact {
             display: none;
         }
+
         .desktop-tablet-h2 {
             display: block;
             font-size: 32px;
         }
+
         .desktop-tablet-p {
             display: block;
             text-align: center;
         }
     }
+
     .contact-boxes-tablet {
         display: flex;
         gap: 1.6em;
+
         .box-4 {
             width: 343px;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            img {
+                width: 28px;
+            }
         }
-        
+
     }
 
     .subscribe {
@@ -90,44 +107,42 @@
 }
 
 @media (min-width: 1300px) {
-    
+
     .questions-2 {
         margin-top: 5rem;
-        
+
         width: 417px;
         height: 380px;
         grid-area: questions-2;
+
         .desktop-tablet-p {
             text-align: left;
         }
+
         .desktop-tablet-h2 {
             display: inline;
         }
-       
+
     }
-    
+
     .contact-boxes {
         display: flex;
         gap: 1em;
     }
+
     .contact-boxes-tablet {
         display: none;
     }
+
     .info-lista {
         width: 746px;
         grid-area: info-lista;
     }
+
     .subscribe {
         grid-area: subscribe;
     }
-    
-    
-    
+
+
+
 }
-
-
-
-
-
-
-

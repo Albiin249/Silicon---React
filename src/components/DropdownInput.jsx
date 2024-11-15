@@ -5,7 +5,6 @@ const DropdownInput = ({ value, onChange, name }) => {
     const [options] = useState(['Option 1', 'Option 2', 'Option 3']); // Alternativen
 
     const handleOptionClick = (option) => {
-        // Skicka tillbaka ett simulerat event till onChange för att uppdatera värdet i ContactForm
         onChange({ target: { name: name, value: option } });
         setIsDropdownOpen(false);
     };

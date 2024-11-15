@@ -18,7 +18,7 @@ function ContactHero() {
       <div className="container">
         <Navbar />
         <div className="undermeny">
-          <NavLink to="/home" className="homepage-text"> <img src={home}></img>Homepage</NavLink>
+          <NavLink to="/home" className="homepage-text"> <img src={home} alt="Home Icon"></img>Homepage</NavLink>
           <img src={chevRight} alt="" />
           <NavLink to="/contact" className="contact-text">Contact</NavLink>
         </div>
@@ -29,7 +29,7 @@ function ContactHero() {
           <div className="text-box">
             <h3 className="rubrik">Email us</h3>
             <span className="body-m">Please feel free to drop us a line. We will respond as soon as possible.</span>
-            <Link href="#">Leave a message<img src={Arrow}></img></Link>
+            <Link to="#">Leave a message<img src={Arrow}></img></Link>
           </div>
         </div>
         <div className="career">
@@ -37,7 +37,7 @@ function ContactHero() {
           <div className="text-box">
             <h3 className='rubrik'>Careers</h3>
             <span className="body-m">Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</span>
-            <Link href="#">Send an application<img src={Arrow}></img></Link>
+            <Link to="#">Send an application<img src={Arrow} alt="Arrow"></img></Link>
           </div>
         </div>
 

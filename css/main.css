@@ -1387,7 +1387,8 @@ aside .card {
 .questions .mobile-p {
   text-align: center;
 }
-.questions .desktop-tablet-h2, .questions .desktop-tablet-p {
+.questions .desktop-tablet-h2,
+.questions .desktop-tablet-p {
   display: none;
 }
 
@@ -1408,7 +1409,9 @@ aside .card {
 }
 
 @media (min-width: 768px) {
-  .questions .mobile-h2, .questions .mobile-p, .questions .btn-contact {
+  .questions .mobile-h2,
+  .questions .mobile-p,
+  .questions .btn-contact {
     display: none;
   }
   .questions .desktop-tablet-h2 {
@@ -1425,6 +1428,12 @@ aside .card {
   }
   .contact-boxes-tablet .box-4 {
     width: 343px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .contact-boxes-tablet .box-4 img {
+    width: 28px;
   }
   .subscribe {
     width: 705px;
