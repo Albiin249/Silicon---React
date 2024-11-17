@@ -77,7 +77,7 @@ function MoneyTransfer() {
                             </div>
                             <Link to="#" className="btn btn-learn btn-payment">
                                 <span>Learn more</span>
-                                <img src={pil} alt="" />
+                                <img src={pil} alt="Arrow" />
                             </Link>
                         </div>
                     </section>

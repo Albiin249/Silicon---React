@@ -30,12 +30,12 @@ function Faq() {
                                 <div className="phone box-4">
                                     <img src={phone} alt="Phone" />
                                     <p className="body-s">Still have questions?</p>
-                                    <Link to="/contact">Contact us<img src={blueArrow} /></Link>
+                                    <Link to="/contact">Contact us<img src={blueArrow} alt="Arrow" /></Link>
                                 </div>
                                 <div className="message box-4">
                                     <img src={message} alt="Message-bubble" />
                                     <p className="body-s">Don't like phone calls?</p>
-                                    <Link to="/Contact">Contact us<img src={greenArrow} /></Link>
+                                    <Link to="/Contact">Contact us<img src={greenArrow} alt="Arrow" /></Link>
                                 </div>
                             </div>
                         </div>
