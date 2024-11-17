@@ -1,3 +1,5 @@
+//Skapat med en del hjälp av ChatGPT.
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 

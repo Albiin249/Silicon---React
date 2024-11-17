@@ -37,7 +37,6 @@ function HambMeny() {
                 <img className="show-dark" src={hambMenyDark} alt="Menu for mobile/tablet screens" />
             </button>
 
-            {/* Lägg till `show`-klassen när showMenu är true */}
             <div className={`popout-menu ${showMenu ? 'show' : ''}`}>
                 <ul>
                     <li>

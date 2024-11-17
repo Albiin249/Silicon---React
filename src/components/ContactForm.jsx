@@ -15,10 +15,12 @@ function ContactForm() {
 
         if (name === 'email' && !/\S+@\S+\.\S+/.test(value)) {
             setErrors(prevErrors => ({ ...prevErrors, [name]: 'Please enter a valid email.' }))
+        } else if (name === 'fullName' && value.trim() === '') {
+            setErrors(prevErrors => ({ ...prevErrors, [name]: 'Full name is required.' }));
         } else if (name === 'fullName' && value.trim().length < 2) {
-            setErrors(prevErrors => ({ ...prevErrors, [name]: 'Full name must be at least 2 characters long.' }))
+            setErrors(prevErrors => ({ ...prevErrors, [name]: 'Full name must be at least 2 characters long.' }));
         } else {
-            setErrors(prevErrors => ({ ...prevErrors, [name]: '' }))
+            setErrors(prevErrors => ({ ...prevErrors, [name]: '' }));
         }
     }
 
@@ -28,6 +30,24 @@ function ContactForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+
+        const newErrors = {};
+        if (!formData.email.trim()) {
+            newErrors.email = 'Email is required.';
+        }
+        if (!formData.fullName.trim()) {
+            newErrors.fullName = 'Full name is required.';
+
+        }
+        if (!formData.specialist.trim()) {
+            newErrors.specialist = 'Please select a specialist.';
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            return;
+        }
+
 
 
         try {
